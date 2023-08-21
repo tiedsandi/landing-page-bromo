@@ -1,0 +1,80 @@
+@use "../../scss/" as *;
+
+#about-bromo {
+	@include boxsize;
+	color: $black;
+
+	.section-heading {
+		margin-bottom: 2rem;
+		.main-heading {
+			@include heading-4(inherit);
+			position: relative;
+			width: max-content;
+			line-height: 2.2rem;
+
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				width: 102%;
+				height: 3px;
+				background-color: $accent1;
+			}
+		}
+		.sub-heading {
+			@include paragraph-l(inherit, 400);
+		}
+
+		@include tablet {
+			.main-heading {
+				@include heading-6(inherit);
+				line-height: 2.2rem;
+			}
+			.sub-heading {
+				@include paragraph-m(inherit, 400);
+				line-height: 1.2rem;
+			}
+		}
+	}
+
+	.about-content {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		@include paragraph-l(inherit, 400);
+
+		.about-image {
+			width: 100%;
+			grid-row: 2 span;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	@include tablet {
+		.about-content {
+			@include paragraph-m(inherit, 400);
+			.about-image {
+				grid-row: 1 span;
+			}
+			.about-text:nth-of-type(2) {
+				grid-column: 2 span;
+			}
+		}
+	}
+
+	@include mobile {
+		.about-content {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: auto;
+			.about-text:nth-of-type(1) {
+				height: max-content;
+			}
+			.about-text:nth-of-type(2) {
+				grid-column: 1 span;
+			}
+		}
+	}
+}

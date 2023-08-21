@@ -66,19 +66,18 @@
 					a {
 						padding: 10px;
 						background-color: rgba($color: $accent2, $alpha: 0.4);
-						// float: right;
 					}
 				}
 			}
 
 			.hero-nav-icon {
 				display: block;
-				cursor: pointer;
 			}
 		}
 
 		@include mobile {
 			.hero-nav-menu {
+				right: 0;
 				&.active-menu {
 					a {
 						float: right;
@@ -87,6 +86,7 @@
 			}
 		}
 	}
+
 	.hero-text-wrapper {
 		position: absolute;
 		top: 50%;

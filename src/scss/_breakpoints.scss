@@ -5,8 +5,8 @@
 		@content;
 	}
 }
-@mixin mobile-landscape {
-	@media only screen and (max-width: $mobileLandscapeWidth) and (orientation: landscape) {
+@mixin landscape {
+	@media (orientation: landscape) {
 		@content;
 	}
 }

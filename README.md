@@ -35,7 +35,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd landing-page-bromo
+  cd landing-page-bromo-master
 ```
 
 Install dependencies
