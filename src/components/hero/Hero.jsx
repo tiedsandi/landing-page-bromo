@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import BackgroundVideo from "../../assets/videos/hero-video.mp4";
 import LogoImg from "../../assets/imgs/logo.png";
 import PlachoderImg from "../../assets/imgs/placehoder.png";
+import HambugerIcon from "../../assets/svgs/hambuger.svg";
 import "./hero.scss";
 
 const Hero = () => {
+	const [open, setOpen] = useState(false);
+
+	const handlerOpenNavMenu = () => {
+		setOpen(!open);
+	};
 	return (
 		<div className="hero-container">
 			<video autoPlay loop muted className="hero-video">
@@ -16,7 +22,10 @@ const Hero = () => {
 					<a href="/" className="hero-logo">
 						<img src={LogoImg} alt="logo" />
 					</a>
-					<nav className="hero-nav-menu">
+					<div className="hero-nav-icon" onClick={handlerOpenNavMenu}>
+						<img src={HambugerIcon} alt="" />
+					</div>
+					<nav className={`hero-nav-menu ${open ? "active-menu" : ""} `}>
 						<a href="#about-bromo">Tentang Bromo</a>
 						<a href="#tourist-activity">Aktifitas Wisata</a>
 						<a href="#route">Rute Pendakian</a>

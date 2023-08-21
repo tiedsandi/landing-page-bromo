@@ -48,6 +48,44 @@
 				}
 			}
 		}
+
+		.hero-nav-icon {
+			display: none;
+		}
+
+		@include tablet {
+			.hero-nav-menu {
+				@include paragraph-s(inherit, 400);
+				display: none;
+				position: absolute;
+				right: 1rem;
+				top: 4rem;
+
+				&.active-menu {
+					display: block;
+					a {
+						padding: 10px;
+						background-color: rgba($color: $accent2, $alpha: 0.4);
+						// float: right;
+					}
+				}
+			}
+
+			.hero-nav-icon {
+				display: block;
+				cursor: pointer;
+			}
+		}
+
+		@include mobile {
+			.hero-nav-menu {
+				&.active-menu {
+					a {
+						float: right;
+					}
+				}
+			}
+		}
 	}
 	.hero-text-wrapper {
 		position: absolute;
@@ -68,6 +106,20 @@
 				align-items: center;
 
 				@include paragraph-m(inherit, 400);
+			}
+		}
+
+		@include mobile {
+			.hero-text {
+				&-heading {
+					@include heading-4(inherit);
+				}
+				&-sub-heading {
+					@include paragraph-m(inherit, 300);
+				}
+				&-rating {
+					@include paragraph-s(inherit, 400);
+				}
 			}
 		}
 	}
