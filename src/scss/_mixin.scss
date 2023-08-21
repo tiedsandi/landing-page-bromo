@@ -1,0 +1,42 @@
+@use "./variables" as *;
+
+@mixin boxsize() {
+	max-width: $max-width;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+@mixin flex($aligin-item, $justify-content) {
+	display: flex;
+	align-items: $aligin-item;
+	justify-content: $justify-content;
+}
+
+@mixin base-text($fs, $fw, $fc) {
+	font-size: $fs;
+	font-weight: $fw;
+	color: $fc;
+}
+@mixin base-text-advance($ls, $lh, $ws) {
+	letter-spacing: $ls;
+	line-height: $lh;
+	word-spacing: $ws;
+}
+
+@mixin reset($type) {
+	@if $type == a {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+	}
+	@if $type == ul {
+		list-style-type: none;
+	}
+	@if $type == button {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		cursor: pointer;
+	}
+}

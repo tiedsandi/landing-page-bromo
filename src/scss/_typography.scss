@@ -1,0 +1,61 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+@mixin heading-1($color) {
+	@include base-text(3.8125rem, 700, $color);
+	//size, weight, color
+	letter-spacing: -0.0457rem;
+	line-height: 3rem;
+}
+
+@mixin heading-2($color) {
+	@include base-text(3.0625rem, 700, $color);
+	letter-spacing: -0.0457rem;
+}
+@mixin heading-3($color) {
+	@include base-text(2.4375rem, 700, $color);
+	letter-spacing: -0.0457rem;
+}
+@mixin heading-4($color) {
+	@include base-text(1.9375rem, 700, $color);
+	letter-spacing: -0.0457rem;
+}
+@mixin heading-5($color) {
+	@include base-text(1.5625rem, 700, $color);
+	letter-spacing: -0.0457rem;
+}
+@mixin heading-6($color) {
+	@include base-text(1.25rem, 700, $color);
+	letter-spacing: -0.0457rem;
+}
+
+@mixin overline-1($color) {
+	@include base-text(1rem, 700, $color);
+	letter-spacing: -0.01rem;
+}
+@mixin overline-2($color) {
+	@include base-text(0.8125rem, 700, $color);
+	letter-spacing: -0.0065rem;
+}
+
+@mixin paragraph-xl($color, $weight) {
+	@include base-text(1.5625rem, $weight, $color);
+	line-height: 2rem;
+}
+
+@mixin paragraph-l($color, $weight) {
+	@include base-text(1.25rem, $weight, $color);
+	line-height: 1.875rem;
+}
+@mixin paragraph-m($color, $weight) {
+	@include base-text(1rem, $weight, $color);
+	line-height: 1.5rem;
+}
+@mixin paragraph-s($color, $weight) {
+	@include base-text(0.8125rem, $weight, $color);
+	line-height: 1.25rem;
+}
+@mixin paragraph-xs($color, $weight) {
+	@include base-text(0.625rem, $weight, $color);
+	line-height: 1rem;
+}

@@ -1,0 +1,74 @@
+@use "../../scss/" as *;
+
+.hero-container {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 20%);
+		z-index: -1;
+	}
+	.hero-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+}
+
+.hero-content {
+	@include boxsize;
+	color: $white;
+	position: relative;
+	height: 100%;
+
+	.hero-header {
+		@include flex(center, space-between);
+		.hero-nav-menu {
+			@include paragraph-s(inherit, 400);
+			display: flex;
+			gap: 1.25rem;
+			text-transform: uppercase;
+			a {
+				@include reset(a);
+				display: flex;
+				align-items: center;
+				&:hover {
+					color: $gray-100;
+				}
+			}
+		}
+	}
+	.hero-text-wrapper {
+		position: absolute;
+		top: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		.hero-text {
+			&-heading {
+				@include heading-1(inherit);
+			}
+			&-sub-heading {
+				@include paragraph-xl(inherit, 300);
+			}
+			&-rating {
+				display: flex;
+				align-items: center;
+
+				@include paragraph-m(inherit, 400);
+			}
+		}
+	}
+}
