@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./mixin" as *;
+@use "./breakpoints" as *;
 
 @mixin heading-1($color) {
 	@include base-text(3.8125rem, 700, $color);
@@ -24,6 +25,11 @@
 @mixin heading-5($color) {
 	@include base-text(1.5625rem, 700, $color);
 	letter-spacing: -0.0457rem;
+
+	@include mobile {
+		@include base-text(1.25rem, 700, $color);
+		letter-spacing: -0.0457rem;
+	}
 }
 @mixin heading-6($color) {
 	@include base-text(1.25rem, 700, $color);
@@ -47,6 +53,16 @@
 @mixin paragraph-l($color, $weight) {
 	@include base-text(1.25rem, $weight, $color);
 	line-height: 1.875rem;
+
+	@include tablet {
+		@include base-text(1rem, $weight, $color);
+		line-height: 1.5rem;
+	}
+
+	@include mobile {
+		@include base-text(0.8125rem, $weight, $color);
+		line-height: 1.25rem;
+	}
 }
 @mixin paragraph-m($color, $weight) {
 	@include base-text(1rem, $weight, $color);

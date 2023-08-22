@@ -2,19 +2,18 @@ import React from "react";
 
 import AboutImg from "../../assets/imgs/about-section.png";
 import "./about-bromo.scss";
+import Heading from "../heading/Heading";
 
 const AboutBromo = () => {
 	return (
 		<div id="about-bromo">
-			<div className="section-heading">
-				<div className="main-heading">Tentang Bromo</div>
-				<div className="sub-heading">
-					Penjelasan singkat tentang Gunung Bromo
-				</div>
-			</div>
+			<Heading
+				mainHeading={"Tentang Bromo"}
+				subHeading={"Penjelasan singkat tentang Gunung Bromo"}
+			/>
 			<div className="about-content">
 				<div className="about-image">
-					<img src={AboutImg} alt="about-image" />
+					<img src={AboutImg} alt="about" />
 				</div>
 				<p className="about-text">
 					<b>Gunung Bromo </b>adalah salah satu gunung berapi paling terkenal di

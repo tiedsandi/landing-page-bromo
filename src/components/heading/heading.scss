@@ -1,0 +1,35 @@
+@use "../../scss/" as *;
+
+.section-heading {
+	margin-bottom: 2rem;
+	color: $black;
+	.main-heading {
+		@include heading-5(inherit);
+		position: relative;
+		width: max-content;
+		line-height: 2.2rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 102%;
+			height: 3px;
+			background-color: $accent1;
+		}
+	}
+	.sub-heading {
+		@include paragraph-l(inherit, 400);
+	}
+
+	@include tablet {
+		.main-heading {
+			@include heading-6(inherit);
+			line-height: 2.2rem;
+		}
+		.sub-heading {
+			@include paragraph-m(inherit, 400);
+			line-height: 1.2rem;
+		}
+	}
+}

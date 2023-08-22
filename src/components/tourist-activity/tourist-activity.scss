@@ -1,0 +1,48 @@
+@use "../../scss/" as *;
+
+#tourist-activity {
+	@include boxsize;
+
+	.tourist-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			&-img {
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&-footer {
+				background-color: $primary;
+				color: $white;
+				padding: 1.25rem;
+				height: 100%;
+				.card-heading {
+					@include heading-5(inherit);
+					margin-bottom: 0.5rem;
+				}
+				.card-subheading {
+					@include paragraph-l(inherit, 400);
+				}
+			}
+		}
+	}
+
+	@include mobile {
+		.tourist-wrapper {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 0.5rem;
+
+			.card {
+				&-footer {
+					padding: 0.8rem;
+				}
+			}
+		}
+	}
+}
