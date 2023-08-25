@@ -5,25 +5,25 @@ import "./tourist-activity.scss";
 
 const activityAtBromo = [
 	{
-		img: "./images/mendaki-gunung.png",
+		img: "./images/activity/mendaki-gunung.png",
 		heading: "Mendaki Menuju Kawah Bromo",
 		subheading:
 			"Rasa petualangan akan menyertai Anda saat Anda mendaki menuju kawah aktif Gunung Bromo. Nikmati perjalanan melalui lahan pasir berombak yang unik sebelum mencapai kawah yang mendalam dan menyaksikan kegiatan vulkanik dari jarak dekat.",
 	},
 	{
-		img: "./images/bersepeda.png",
+		img: "./images/activity/bersepeda.png",
 		heading: "Bersepeda di Sekitar Gunung",
 		subheading:
 			"Jika Anda mencari pengalaman yang lebih bersemangat, bersepeda di sekitar Gunung Bromo bisa menjadi pilihan. Nikmati hembusan angin segar dan pemandangan lanskap vulkanik yang menakjubkan sambil mengeksplorasi area sekitar.",
 	},
 	{
-		img: "./images/adat.png",
+		img: "./images/activity/adat.png",
 		heading: "Mengunjungi Desa Tenggerese",
 		subheading:
 			"Temui suku Tenggerese yang khas dan pelajari tentang budaya mereka. Anda bisa berinteraksi dengan penduduk lokal, melihat upacara adat, dan merasakan keramahan mereka.",
 	},
 	{
-		img: "./images/fotografi.png",
+		img: "./images/activity/fotografi.png",
 		heading: "Fotografi yang Spektakuler",
 		subheading:
 			"Gunung Bromo adalah surga bagi para fotografer. Jepretan matahari terbit di Puncak Penanjakan, kabut yang menyelubungi kawah, dan pemandangan epik lainnya akan menciptakan momen fotografi yang tak terlupakan.",
@@ -37,7 +37,7 @@ const TouristActivit = () => {
 				mainHeading={"Aktivitas Wisata"}
 				subHeading={"Aktivitas wisata yang dapat dilakukan di Gunung Bromo"}
 			/>
-			<div className="tourist-wrapper">
+			<div className="tourist-content">
 				{activityAtBromo.map((activity, index) => (
 					<div className="card" key={index}>
 						<div className="card-img">

@@ -3,6 +3,7 @@
 #hiking-trails {
 	background-color: $secondary;
 	border: 1px $primary solid;
+
 	.hiking-trails {
 		&-wrapper {
 			@include boxsize;
@@ -20,9 +21,12 @@
 
 		&-image {
 			width: 100%;
+			height: 100%;
 
 			img {
 				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
 

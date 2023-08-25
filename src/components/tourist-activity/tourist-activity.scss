@@ -3,7 +3,7 @@
 #tourist-activity {
 	@include boxsize;
 
-	.tourist-wrapper {
+	.tourist-content {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
@@ -44,7 +44,7 @@
 	}
 
 	@include mobile {
-		.tourist-wrapper {
+		.tourist-content {
 			grid-template-columns: repeat(1, 1fr);
 			gap: 0.5rem;
 
