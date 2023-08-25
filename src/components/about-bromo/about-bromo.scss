@@ -8,7 +8,6 @@
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
 		.about-image {
 			width: 100%;
 			grid-row: 2 span;

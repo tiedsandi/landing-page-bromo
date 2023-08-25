@@ -1,0 +1,76 @@
+@use "../../scss/" as *;
+
+#hiking-trails {
+	background-color: $secondary;
+	border: 1px $primary solid;
+	.hiking-trails {
+		&-wrapper {
+			@include boxsize;
+		}
+
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+
+			@include tablet {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&-image {
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&-text {
+			h1 {
+				@include heading-4($white);
+				background-color: $accent2;
+				width: max-content;
+				padding: 5px 10px;
+				margin-bottom: 2.5rem;
+			}
+
+			p {
+				@include paragraph-l(inherit, 400);
+				br {
+					content: "";
+					margin-bottom: 2rem;
+					display: block;
+				}
+			}
+
+			@include small-laptop {
+				h1 {
+					@include heading-5($white);
+					margin-bottom: 1rem;
+				}
+
+				p {
+					@include paragraph-m(inherit, 400);
+					br {
+						margin-bottom: 1rem;
+					}
+				}
+			}
+
+			@include mobile {
+				h1 {
+					@include heading-6($white);
+					margin-bottom: 1rem;
+				}
+
+				p {
+					@include paragraph-s(inherit, 400);
+					br {
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

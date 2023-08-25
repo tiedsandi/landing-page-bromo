@@ -29,6 +29,16 @@
 				.card-subheading {
 					@include paragraph-l(inherit, 400);
 				}
+
+				@include tablet {
+					.card-heading {
+						@include heading-6(inherit);
+					}
+
+					.card-subheading {
+						@include paragraph-m(inherit, 400);
+					}
+				}
 			}
 		}
 	}
