@@ -1,0 +1,24 @@
+.rating {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.star {
+	color: rgb(177, 177, 177);
+}
+
+.yellow {
+	color: yellow;
+}
+
+.half-yellow {
+	position: relative;
+	display: inline-block;
+}
+
+.half-yellow::before {
+	content: "★";
+	position: absolute;
+	color: yellow;
+	clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}

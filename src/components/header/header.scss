@@ -1,0 +1,74 @@
+@use "../../scss/" as *;
+
+.hero-header {
+	transition: background-color 0.3s ease;
+	width: 100%;
+	position: fixed;
+	z-index: 4;
+
+	&-wrapper {
+		@include boxsize;
+		@include flex(center, space-between);
+		color: $white;
+		padding: 0 1rem;
+	}
+
+	.hero-nav {
+		&-menu {
+			@include paragraph-s(inherit, 400);
+			display: flex;
+			gap: 1.25rem;
+			text-transform: uppercase;
+
+			a {
+				@include reset(a);
+				display: flex;
+				align-items: center;
+				&:hover {
+					color: $gray-100;
+				}
+			}
+		}
+
+		&-icon {
+			display: none;
+		}
+	}
+
+	@include tablet {
+		.hero-nav-menu {
+			@include paragraph-s(inherit, 400);
+			display: none;
+			position: absolute;
+			right: 0rem;
+			top: 2.75rem;
+
+			&.active-menu {
+				display: inline-block;
+				a {
+					padding: 0.625rem;
+					background-color: rgba($color: $accent2, $alpha: 0.6);
+				}
+			}
+		}
+
+		.hero-nav-icon {
+			display: block;
+		}
+	}
+
+	@include mobile {
+		.hero-nav-menu {
+			right: 0;
+			&.active-menu {
+				a {
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+.scrolled {
+	background-color: $accent2-300;
+}
