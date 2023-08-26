@@ -52,12 +52,12 @@ const Footer = () => {
 					<div className="footer-recomendation">
 						<h3>Destinasi Lainnya</h3>
 						<div className="recomendation-wrapper">
-							<div className="recomendation-image-overlay">
+							<div className="recomendation-item">
 								<div className="overlay"></div>
 								<img
 									src={ImgBackground}
-									alt="Image"
-									className="background-image"
+									alt="recomandation-1"
+									className="recomedation-img"
 								/>
 								<div className="recomendation-text">
 									<h6>Gn. Sumeru</h6>
@@ -68,12 +68,44 @@ const Footer = () => {
 									</p>
 								</div>
 							</div>
-							<div className="recomendation-image-overlay">
+							<div className="recomendation-item">
 								<div className="overlay"></div>
 								<img
 									src={ImgBackground}
-									alt="Image"
-									className="background-image"
+									alt="recomandation-1"
+									className="recomedation-img"
+								/>
+								<div className="recomendation-text">
+									<h6>Gn. Sumeru</h6>
+									<p>
+										3
+										<Rating value={3} />
+										10.213 ulasan Google
+									</p>
+								</div>
+							</div>
+							<div className="recomendation-item">
+								<div className="overlay"></div>
+								<img
+									src={ImgBackground}
+									alt="recomandation-1"
+									className="recomedation-img"
+								/>
+								<div className="recomendation-text">
+									<h6>Gn. Sumeru</h6>
+									<p>
+										3
+										<Rating value={3} />
+										10.213 ulasan Google
+									</p>
+								</div>
+							</div>
+							<div className="recomendation-item">
+								<div className="overlay"></div>
+								<img
+									src={ImgBackground}
+									alt="recomandation-1"
+									className="recomedation-img"
 								/>
 								<div className="recomendation-text">
 									<h6>Gn. Sumeru</h6>
