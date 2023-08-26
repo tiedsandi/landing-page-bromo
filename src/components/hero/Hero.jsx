@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import BackgroundVideo from "../../assets/videos/hero-video.mp4";
 import "./hero.scss";
@@ -7,7 +7,7 @@ import Header from "../header/Header";
 
 const Hero = () => {
 	return (
-		<div className="hero-container">
+		<div id="Hero">
 			<video autoPlay loop muted className="hero-video">
 				<source src={BackgroundVideo} type="video/mp4" />
 			</video>
