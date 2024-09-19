@@ -71,11 +71,13 @@ Any additional information goes here -->
 
 ## 🚀 About Me
 
-I'm a Junior Frontend dev, freshgradueate from UPNVJ Indonesia.
+I am a web developer based Jakarta, Indonesia. With a passion for continuous learning and growth, I focus on building interactive and responsive user interfaces. I have experience developing web applications using modern technologies like React.js, Redux, and SASS, along with design skills in Figma to ensure both aesthetics and functionality.
 
 ## 🛠 Skills
 
-Javascript, HTML, CSS, Figma, React.js, Redux, SASS, Bootstrap, Restful API
+I am proficient in programming languages like JavaScript, as well as front-end technologies such as HTML, CSS, and popular frameworks like Bootstrap. Additionally, I am experienced in integrating Restful APIs to build dynamic, backend-connected applications.
+
+I strive to create innovative, user-friendly solutions and am eager to contribute to dynamic and collaborative development teams.
 
 ## 🔗 Links
 
