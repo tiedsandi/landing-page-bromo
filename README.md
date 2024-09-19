@@ -12,7 +12,7 @@ such as planning a trip.
 
 ## Tech Stack
 
-**Client:** Reactjs, SASS
+**Client:** React.js, SASS
 
 <!-- **Server:** Node, Express -->
 
@@ -22,7 +22,19 @@ https://bromo-landing-page.netlify.app
 
 ## Screenshots
 
-![App Screenshot](/src/assets/imgs/demo-img.png)
+![App Screenshot](src/assets/imgs/demo.png)
+
+<!-- ![App Screenshot](src/assets/imgs/web1.png)
+![App Screenshot](src/assets/imgs/web2.png)
+![App Screenshot](src/assets/imgs/mobile.png) -->
+
+<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px;">
+  <img src="src/assets/imgs/web1.png" alt="App Screenshot Web 1" style="grid-column: 1; grid-row: 1; width: 100%; height: auto; object-fit: cover;"/>
+
+  <img src="src/assets/imgs/web2.png" alt="App Screenshot Web 2" style="grid-column: 2; grid-row: 2; width: 100%; height: auto; object-fit: cover;"/>
+
+  <img src="src/assets/imgs/mobile.png" alt="App Screenshot Mobile" style="grid-column: 2; grid-row: 1 / 3; width: 100%; height: auto; object-fit: cover;"/>
+</div> -->
 
 ## Run Locally
 
