@@ -41,7 +41,7 @@ https://bromo-landing-page.netlify.app
 Clone the project
 
 ```bash
-  git clone https://github.com/tiedsandi/landing-page-bromo.git
+  git clone https://github.com/tiedsandi/project_landing-page-bromo.git
 ```
 
 Go to the project directory
